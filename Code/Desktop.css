@@ -115,7 +115,9 @@
         padding: 0px 20px;
         border-radius: 10px;
     }
-
+    .oscuro{
+        display: none;
+    }
     .company-options:hover, .about:hover,.features-list:hover, .login:hover,.register:hover, section a:hover{
         color: #141414;
     }

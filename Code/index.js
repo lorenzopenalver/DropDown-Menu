@@ -7,6 +7,7 @@ const arrows = document.querySelector(".arrows")
 const arrows2 = document.querySelector(".arrows2")
 const menuIcon = document.querySelector(".menu-icon")
 const menuCloseIcon = document.querySelector(".menu-close")
+const shadowing = document.querySelector(".oscuro")
 
 
 menuIcon.addEventListener("click", openMenu)
@@ -15,16 +16,19 @@ featureList.addEventListener("click", featrueConfig)
 companyOptions.addEventListener("click", companyConfig)
 arrows.addEventListener("click", featrueConfig)
 arrows2.addEventListener("click", companyConfig)
-
+shadowing.addEventListener("click", openMenu)
 function openMenu() {
     if(menuOptions.classList.contains("inactive")){
         menuOptions.classList.remove("inactive")
+        shadowing.classList.remove("inactive")
+        shadowing.style.height = `${document.documentElement.scrollHeight}px`
         arrowImg.src = "./images/icon-arrow-down.svg"
         arrowImg2.src = "./images/icon-arrow-down.svg"
     }else if (!menuOptions.classList.contains("inactive")){
         menuOptions.classList.add("inactive")
         featureItems.classList.add("inactive")
         companyItems.classList.add("inactive")
+        shadowing.classList.add("inactive")
         arrowImg.src = "./images/icon-arrow-down.svg"
         arrowImg2.src = "./images/icon-arrow-down.svg"
     }
@@ -59,6 +63,7 @@ function closeGeneral() {
         featureItems.classList.add("inactive")
         menuOptions.classList.add("inactive")
         companyItems.classList.add("inactive")
+        shadowing.classList.add("inactive")
         arrowImg.src = "./images/icon-arrow-down.svg"
         arrowImg2.src = "./images/icon-arrow-down.svg"
     }
