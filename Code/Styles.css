@@ -1,0 +1,215 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Epilogue', sans-serif;
+}
+
+.inactive{
+    display: none;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header .menu-close, header .menu-icon{
+    width: 35px;
+    height: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.snap-icon{
+    background: url("/images/logo.svg") no-repeat;
+    height: 45px;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 100px;
+}
+
+.hero-img{
+    background: url("/images/image-hero-mobile.png") center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 50vh;
+}
+.options {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.arrows img{
+    margin-top: 35px;
+    margin-left: 10px;
+    width: 100%;
+    align-items: center;
+}
+.arrows2 img{
+    margin-left: 10px;
+    width: 100%;
+    align-items: center;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section h1{
+    font-size: 3rem;
+    color: #141414;
+    margin-top: 20px;
+}
+section p{
+    margin-top: 10px;
+    color: #686868;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+    width: 90%;
+}
+section a{
+    background-color: black;
+    padding: 18px 25px;
+    text-align: center;
+    margin-top: 20px;
+    color: #F9F9F9;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 15px;
+}
+.clients-container{
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+figure{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.client-databiz, .client-meet{
+    height: 15px;
+}
+.client-audiophile{
+    height: 20px;
+}
+.client-maker{
+    height: 20px;
+}
+.calendar-icon ,.todo-icon,.reminder-icon,.plan-icon{
+    display: flex;
+    align-items: center;
+}
+.calendar-icon span{
+
+    background: url("/images/icon-calendar.svg");
+    background-repeat: no-repeat;
+    height: 20px;
+    margin-right: 4px;
+    width: 20px;
+}
+.todo-icon span{
+    background: url("/images/icon-todo.svg");
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    margin-right: 4px;
+}
+.reminder-icon span{
+    background: url("/images/icon-reminders.svg");
+    background-repeat: no-repeat;
+    height: 20px;
+    margin-right: 12px;
+    width: 12px;
+}
+.plan-icon span{
+    background: url("/images/icon-planning.svg");
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    margin-right: 4px;
+}
+.separation{
+  display: flex;
+  flex-direction: column;
+}
+.menu-container li{
+    list-style: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: #686868;
+}
+.menu-container{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 300px;
+    background-color: white;
+    font-family: 'Epilogue', sans-serif;
+}
+.menu-container h3{
+    font-size: 1.8rem;
+    color: #686868;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.menu-container .menu-close{
+    position: absolute;
+    right: 0;
+    height: 35px;
+}
+.menu-container ul{
+    margin-left: 40px;
+}
+.menu-container .features-list{
+    margin-top: 40px;
+}
+.menu-options-container{
+    margin-top: 10px;
+}
+.register-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.register-login .login{
+    background-color: rgb(255, 255, 255);
+    color:#686868;
+    border: none;
+    text-align: center;
+    margin-top: 40px;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 15px;
+}
+.register-login a{
+    background-color: rgb(255, 255, 255);
+    padding: 10px 5px;
+    width: 80%;
+    border: #686868 solid 2px;
+    text-align: center;
+    margin-top: 20px;
+    color: #686868;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 15px; 
+}
