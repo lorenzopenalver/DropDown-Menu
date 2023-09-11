@@ -48,13 +48,14 @@ header .menu-close, header .menu-icon{
     flex-direction: row;
 }
 .arrows img{
-    margin-top: 35px;
+    margin-top: 25px;
     margin-left: 10px;
     width: 100%;
     align-items: center;
 }
 .arrows2 img{
     margin-left: 10px;
+    margin-bottom: 15px;
     width: 100%;
     align-items: center;
 }
@@ -167,7 +168,7 @@ figure{
 .menu-container h3{
     font-size: 1.8rem;
     color: #686868;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     margin-left: 20px;
     font-weight: 500;
     cursor: pointer;
@@ -182,9 +183,13 @@ figure{
 }
 .menu-container .features-list{
     margin-top: 40px;
+    margin-bottom: 15px;
 }
 .menu-options-container{
     margin-top: 10px;
+}
+.company-options{
+    margin-bottom: 15px;
 }
 .register-login{
     display: flex;
